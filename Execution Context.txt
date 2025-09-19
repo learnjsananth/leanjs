@@ -1,0 +1,47 @@
+var a=2;
+Function sum(num){
+var ans=num*num
+return ans;
+}
+
+var square1=sum(2);
+var square2=sum(3);
+
+first global execution context is created .call stack is a cotainer in which global execution is pushed in that you will have the variable component and execution component
+
+variable component :
+A undefined
+sum {} function
+square 1 : undefined
+square 2 : undefined
+
+Execuiton component
+
+A will be assigned 2 
+sum(2) - new execution context is created . Wheever a function is called , new global execution is created and pushed inside call stack
+
+variable component:
+num : undefined
+ans : undefined
+
+Execution component
+num : 2
+ans = 2*2
+Once ans is returned , this execution context is deleted 
+and it goes to global execution context
+
+now sum(3) - new execution context is created - same process is followed and once ans is returned , this execution context is deleted and the control moves to global exeuction context ad GEC is deleted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
