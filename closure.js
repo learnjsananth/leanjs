@@ -1,25 +1,45 @@
 /*function x(){
     var a=7;
     function y(){
-        console.log(y)
+        console.log(a)
     }
-    y();
+     y();
 }
-x();*/
+x(); //prints 7
+
+*/
 
 //A function bind together by its lexical envt/scope
 // function along with its lexical scope
 
 /*
 function a(){
+    a2=3;
     var a1= function b(){
         console.log(a2)
     };
    
-    b();
+    a1();
 }
 a();
+*/  //returns 3
+
+/*
+
+function a(){
+   
+    var a1= function b(){
+        console.log(a2)
+    };
+   
+    a1(); //a2 is not defined
+    // b() - b is not defined
+}
+a();
+
 */
+
+
 //you can pass function as a parameter
 /*
 function c(){
@@ -95,7 +115,7 @@ z();
 
 */
 
-
+/*
 function z(){
    var b=900;
    function x(){
@@ -114,6 +134,8 @@ z()()(); //7 , 900
 
 var z1 = z();
 console.log(z1) //[Function: x]
+
+*/
 /*
 uses of closure
   module desig pattern
