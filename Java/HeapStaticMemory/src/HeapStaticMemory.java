@@ -13,6 +13,8 @@ public class HeapStaticMemory {
 		//destroyed when the object referece becomes null..
 		//and all the static variables reside in 
 		//seperate memory space - meta space
+		//so stack - memory deletion is automatic and 
+		//heap memory is garbage collector
 
 	}
 
